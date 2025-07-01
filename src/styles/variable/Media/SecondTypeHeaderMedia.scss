@@ -1,0 +1,90 @@
+$macbookAir: 1440px;
+$tablet: 1200px;
+$mobile: 767px;
+$Phone: 374px;
+
+@media (max-width: $mobile) {
+
+
+  // media's for second header
+  .secondheader {
+    background-image: linear-gradient(90deg, rgba(0, 7, 158, 0.4) 0%, rgba(0, 61, 30, 0) 100%), url(../../../../public/assets/images/backgroundsecondHeader/IMG_0220.png);
+    height: 450px;
+
+    //setting bread crumb
+    .breadcrumbs {
+      display: flex;
+      padding: 0;
+      margin: auto;
+      justify-content: center;
+      max-width: 50px;
+      list-style: none;
+      gap: 8px;
+    }
+
+
+    &__container {
+      background-color: var(--colorbackgroundheadersecondblue);
+      padding: 0;
+    }
+
+    &__description--container {
+      position: relative;
+      flex-direction: column;
+      padding: 40px 0 0 0;
+      top: 40px;
+    }
+
+    &__container--head--description {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    &__main--description {
+      font-size: 51px;
+    }
+
+    &__main--description--n2 {
+      font-size: 29px;
+    }
+
+    &__nav {
+      position: absolute;
+      display: flex;
+      background-color: #CCE1D7;
+      left: -250%;
+      top: 100%;
+      transform: translateX(-50%);
+      padding: 20px 16px;
+      width: 100%;
+      height: calc(100vh - 88px);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: left 0.5s;
+    }
+
+    &__nav--visible {
+      left: 50%;
+    }
+
+    &__nav-button {
+      display: block;
+    }
+
+    .button .button--size-m {
+      display: block;
+    }
+
+
+    &__logoinc {
+      width: 133px;
+    }
+
+    &__nav-list {
+      flex-direction: column;
+    }
+  }
+}

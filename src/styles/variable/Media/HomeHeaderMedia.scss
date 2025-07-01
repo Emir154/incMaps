@@ -1,0 +1,93 @@
+$macbookAir: 1440px;
+$tablet: 1200px;
+$tabletSmall: 1024px;
+$mobile: 767px;
+$Phone: 374px;
+
+@media (max-width: $macbookAir) {
+  .header {
+    background-image: url(../../../../public/assets/images/HomeImages/Rectangle185.jpeg);
+    background-size: 1440px;
+  }
+}
+
+@media (max-width: $tabletSmall) {
+  .header {
+    &__container--head--description {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+  }
+}
+
+@media (max-width: $mobile) {
+  .header {
+    background-image: url(../../../../public/assets/images/HomeImages/Rectangle185.jpeg);
+    min-width: 767px;
+
+    &__container {
+      background-color: rgba(204, 225, 215, 0.67);
+    }
+
+    &__description--container {
+      position: relative;
+      flex-direction: column;
+      top: 5px;
+    }
+
+    &__container--head--description {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    &__main--description {
+      font-size: 38px;
+    }
+
+    &__main--description--n2 {
+      font-size: 29px;
+    }
+
+    &__nav {
+      position: absolute;
+      display: flex;
+      background-color: #CCE1D7;
+      left: -250%;
+      top: 100%;
+      transform: translateX(-50%);
+      padding: 20px 16px;
+      width: 100%;
+      height: calc(100vh - 88px);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: left 0.5s;
+    }
+
+    &__nav--visible {
+      left: 50%;
+    }
+
+    &__nav-button {
+      display: block;
+    }
+
+    .button .button--size-m {
+      display: block;
+    }
+
+
+    &__logoinc {
+      width: 133px;
+    }
+
+    &__nav-list {
+      flex-direction: column;
+    }
+  }
+}

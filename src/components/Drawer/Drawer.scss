@@ -1,0 +1,124 @@
+.drawer {
+  position: absolute;
+  display: none;
+  top: 70px;
+  transition: right 0.3s ease-in-out;
+  z-index: 4;
+  max-width: 767px;
+  width: 100%;
+
+  &__main {
+    display: flex;
+    max-width: 767px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorbggreen);
+  }
+
+  &__line {
+    width: 60%;
+    border: 1px solid var(--colors-Brand-Green-Primary-3)
+  }
+
+  &--open {
+    display: block;
+    right: 0;
+    animation-name: drawerCollision;
+    animation-duration: 1.1s;
+  }
+
+  @keyframes drawerCollision {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+      width: 150%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+  &__nav--link--m {
+    color: var(--text-color);
+    padding: 10px 0 10px 0;
+  }
+
+
+  &__container-getinvolved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  &__container-iapps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  &__content-interaction {
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    min-width: 120px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__title-getinvolved {
+    font-family: var(--fontinter);
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+
+  }
+
+  &__title {
+    font-family: var(--fontinter);
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+  }
+
+  &__content-svgs {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  &__ahref-link {
+    font-family: var(--fontinter);
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    max-width: 102px;
+  }
+
+  &__svg {
+    display: flex;
+    margin: auto;
+    padding-bottom: 10px;
+    max-width: 80px;
+  }
+
+  &__iapp-svg {
+    padding: 2px;
+  }
+
+}

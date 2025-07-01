@@ -1,0 +1,103 @@
+body.dark {
+  background-color: var(--colordarkgrey);
+  transition: background-color 0.5s ease;
+
+  .header {
+    background-image: url(../../../../public/assets/images/HomeImages/Rectangle185darktheme.jpeg);
+    transition: background-image 0.5s ease;
+
+    &__nav--link--m {
+      color: var(--colordark);
+    }
+
+  }
+
+  // second header settings media
+
+  .secondheader {
+
+    &__container {
+      background-color: var(--colorbackgrounddonateblue);
+      transition: background-color 0.5s ease;
+    }
+
+    &__nav--link--m {
+      color: var(--colorwhite);
+    }
+
+  }
+
+  .main {
+    &__container--description-global {
+      background-color: var(--colorbackgroundhomegreen);
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    &__title {
+      color: var(--colorwhite);
+    }
+
+    &__description {
+      color: var(--colorwhite);
+    }
+
+    &__link--container--map {
+      color: var(--colorwhite);
+    }
+    &__link--container-map--m {
+      color: var(--colorwhite);
+    }
+    //community page
+    &__container--donate {
+      background-color: var(--colorbackgrounddonateblue);
+    }
+
+    &__title-contributions {
+      color: var(--colorwhite);
+    }
+
+    &__title--connected {
+      color: var(--colorwhite);
+    }
+
+    &__description-contributions {
+      color: var(--colorwhite);
+    }
+
+    &__description--donate {
+      color: var(--colorwhite);
+    }
+
+     &__donate--description  {
+       color: var(--colorwhite);
+     }
+
+    &__social-image {
+      filter: brightness(0) invert(1);
+    }
+
+  }
+
+  .footer {
+    background-color: var(--colordark);
+    transition: background-color 0.5s ease-in-out;
+
+    &__logo {
+      filter: brightness(0) invert(1);
+    }
+
+    &__title {
+      color: var(--colorwhite);
+    }
+
+    select {
+      color: var(--colorwhite);
+    }
+
+    &__link {
+      color: var(--colorwhite);
+    }
+  }
+
+}
+

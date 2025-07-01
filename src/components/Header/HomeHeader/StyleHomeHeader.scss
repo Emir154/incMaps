@@ -1,0 +1,121 @@
+.header {
+background-color: #CCE1D7;
+background-image: url(../../../../public/assets/images/HomeImages/Rectangle185.jpeg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: 100%;
+  height: 800px;
+  min-width: 767px;
+  max-width: 1440px;
+  margin: auto;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1100px;
+    max-height: 70px;
+    margin: auto;
+
+  }
+
+  &__logoinc {
+    width: 160px;
+  }
+
+
+  &__nav--link--m {
+    padding: 0 20px 0 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__description--container {
+      position: relative;
+    display: flex;
+      top: 80px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      padding: 0 20px;
+    margin: auto;
+  }
+
+  &__container--head--description{
+    position: relative;
+    align-items: center;
+    max-width: 494px;
+    width: 100%;
+  }
+
+  &__main--description {
+    font-family: var(--fontinter);
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 60px;
+    color: var(--colorwhite);
+    padding: 0;
+    padding-bottom: 20px;
+    word-wrap: break-word;
+  }
+
+  &__main--description--n2 {
+    font-family: var(--fontlato);
+    font-size: 26px;
+    line-height: 35px;
+    color: var(--colorwhite);
+    max-width: 100%;
+    word-wrap: break-word;
+    padding-bottom: 20px;
+  }
+
+  &__desc--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 494px;
+  }
+
+
+  &__desc-img1 {
+    position: relative;
+    z-index: 0;
+    left: 70px;
+    max-width: 222px;
+    transition:transform 0.3s ease;
+
+    &:hover {
+      transform: rotateZ(15deg);
+    }
+  }
+  &__desc-img2 {
+    position: relative;
+    z-index: 1;
+    max-width: 220px;
+    transition:transform 0.7s ease;
+
+    &:hover {
+      transform: scale(1.13);
+    }
+  }
+  &__desc-img3 {
+    position: relative;
+    z-index: 0;
+    right: 70px;
+    max-width: 222px;
+    transition:transform 0.3s ease;
+
+    &:hover {
+      transform: rotateZ(-15deg);
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+}

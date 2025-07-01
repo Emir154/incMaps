@@ -1,0 +1,44 @@
+$mobile: 767px;
+
+.header__nav-button {
+  display: none;
+
+  // burger menu setting
+  @media (max-width: $mobile) {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+}
+
+.header__nav-line {
+  position: relative;
+  top: 13px;
+  left: 11px;
+  height: 1px;
+  margin:3px 0 3px 0;
+  width: 18px;
+  border-radius: 1px;
+  background-color: var(--text-color);
+  transition: transform var(--transition-time);
+
+
+}
+
+
+.header__nav-button--open .header__nav-line:first-child {
+  transform: translate(0px, 2px) rotate(45deg);
+}
+
+.header__nav-button--open .header__nav-line:nth-child(2) {
+  width: 0;
+  height: 0;
+}
+
+.header__nav-button--open .header__nav-line:last-child {
+  transform: translate(0px, -2px) rotate(-45deg);
+}

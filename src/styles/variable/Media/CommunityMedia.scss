@@ -1,0 +1,57 @@
+$macbookAir: 1440px;
+$tablet: 1200px;
+$mobile: 767px;
+$Phone: 374px;
+
+@media (max-width: $mobile) {
+
+  .main {
+    &__community-contributions {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__container--donate {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    &__information-window {
+
+      &:last-child {
+        position:relative;
+        left: 0%;
+      }
+    }
+
+    &__social-image {
+      padding: 8px;
+      margin: 5px;
+      width: 55px;
+      height: 55px;
+      border: #000D07 2px solid;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    &__image-actions--bg {
+      position: absolute;
+      top:90%;
+      right: 10%;
+    }
+
+    &__image-window {
+      width: 600px;
+    }
+
+    &__line--m1 {
+      width: 120px;
+      margin: 20px auto;
+    }
+
+
+  }
+
+
+}

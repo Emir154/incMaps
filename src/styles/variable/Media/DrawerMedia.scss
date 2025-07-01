@@ -1,0 +1,18 @@
+$macbookAir: 1440px;
+$tablet: 1200px;
+$mobile: 767px;
+$Phone: 374px;
+
+
+
+@media (min-width: $mobile) {
+.drawer {
+  display: none;
+
+  &__main {
+    display: none;
+  }
+
+}
+
+}

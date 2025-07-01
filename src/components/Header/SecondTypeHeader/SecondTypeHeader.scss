@@ -1,0 +1,107 @@
+.secondheader {
+  background-color: var(--colorbackgroundheadersecondblue);
+  background-image:linear-gradient(90deg, rgba(0, 7, 158, 0.4) 0%, rgba(0, 61, 30, 0) 100%), url(../../../../public/assets/images/backgroundsecondHeader/IMG_0220.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 550px;
+  min-width: 767px;
+  max-width: 1440px;
+  margin: auto;
+
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 0 150px 0 150px;
+    background-color: var(--colorbackgroundheadersecondblue);
+    justify-content: space-between;
+    position: relative;
+    max-width: 1440px;
+    max-height: 70px;
+    margin: auto;
+
+  }
+
+
+  &__logoinc {
+    width: 160px;
+  }
+
+  &__nav--list {
+    display: flex;
+  }
+
+  &__nav--link--m {
+    display: flex;
+    padding: 0 20px 0 20px;
+    color: #000D07;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  &__description--container {
+    position: relative;
+    display: flex;
+    top: 120px;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 0 20px 0 150px;
+    margin: auto;
+    animation-duration: 1.8s;
+    animation-name: slideText;
+  }
+
+  @keyframes slideText {
+    from {
+      transform: translateX(100%);
+      margin-left: 100%;
+      width: 150%;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+
+  &__container--head--description{
+    position: relative;
+    align-items: center;
+    max-width: 494px;
+    width: 100%;
+  }
+
+  &__main--description {
+    font-family: var(--fontinter);
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--colorwhite);
+    min-width: unset;
+    padding: 0;
+    padding-bottom: 20px;
+    word-wrap: break-word;
+  }
+
+  &__main--description--n2 {
+    font-family: var(--fontlato);
+    font-size: 26px;
+    line-height: 35px;
+    color: var(--colorwhite);
+    max-width: 70%;
+    word-wrap: break-word;
+    padding-bottom: 20px;
+  }
+
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+}

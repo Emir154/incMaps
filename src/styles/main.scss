@@ -1,0 +1,27 @@
+@use './global/reset';
+@use 'global/global';
+
+@use '../components/Header/HomeHeader/StyleHomeHeader';
+@use '../components/Header/SecondTypeHeader/SecondTypeHeader';
+@use '../components/BreadCrumbs/BreadCrumbs';
+@use '../components/Drawer/Drawer';
+@use '../components/Buttons/Buttons';
+@use '../components/Footer/Footer';
+
+@use '../pages/Home/Home';
+@use '../pages/Community/Community';
+@use '../pages/Weather/Weather';
+
+@use 'variable/root';
+
+@use 'variable/Media/HomeHeaderMedia';
+@use 'variable/Media/SecondTypeHeaderMedia';
+@use 'variable/Media/DrawerMedia';
+@use 'variable/Media/HomeMedia';
+@use 'variable/Media/CommunityMedia';
+@use 'variable/Media/FooterMedia';
+
+@use 'variable/Themes/Theme';
+
+
+

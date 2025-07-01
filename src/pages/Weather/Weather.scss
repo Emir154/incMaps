@@ -1,0 +1,168 @@
+.weather {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  min-width: 767px;
+  max-width: 1440px;
+  background: linear-gradient(90deg,rgba(28, 54, 158, 0.72) 0%, rgba(87, 164, 199, 0.7) 50%, rgba(196, 153, 96, 0.6) 100%);
+
+  &__container {
+    margin: 0 auto;
+  }
+  &__day-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrapper-search {
+    display: flex;
+    align-items: center;
+  }
+
+  &__container-days {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+
+
+  &__day {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(155, 152, 204, 0.15) 0%, rgba(174, 178, 195, 0.15) 44%, rgba(95, 103, 142, 0.15) 100%);
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    border:  rgba(28, 61, 163, 0.3) solid 2px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0px 0px 16px 8px rgba(50,94,163,0.75);
+      -webkit-box-shadow: 0px 0px 16px 8px rgba(50,94,163,0.75);
+      -moz-box-shadow: 0px 0px 16px 8px rgba(50,94,163,0.75);
+    }
+
+  }
+
+  &__day--not-cursorpointer {
+    cursor: auto;
+  }
+
+  &__wrapper-search {
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__input-search {
+    width: 100%;
+    min-width: 500px;
+    margin: auto;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+
+    &:focus {
+      border-color: #0077ff;
+    }
+  }
+
+  &__location-tile {
+    font-family: var(--fontinter);
+    font-weight: 350;
+    padding-left: 40px;
+    font-size: 40px;
+    line-height: 100%;
+    color: var(--colorwhite);
+  }
+  &__tile--m {
+    padding: 0;
+    color: #ccc;
+  }
+
+  &__title {
+    font-family: var(--fontinter);
+    font-weight: 450;
+    font-size: 17px;
+    color: var(--colorwhite);
+    line-height: 100%;
+    padding: 5px;
+
+  }
+  &__title--m1 {
+    font-weight: 400;
+    color: var(--colorwhite);
+    padding-bottom: 50px;
+    font-size: 27px;
+  }
+  &__title--m3 {
+    padding-top: 50px;
+    font-weight: 400;
+    color: var(--colorwhite);
+    padding-bottom: 50px;
+    font-size: 27px;
+  }
+
+  &__container--title-text-align-days {
+    text-align: center;
+  }
+
+  &__button {
+    border-radius: 5px;
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background-color: rgba(1, 99, 211, 0.65);
+    }
+
+  }
+
+}
+
+// suggest підсказка
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 220px;
+  overflow-y: auto;
+  list-style: none;
+  border-radius: 10px;
+  z-index: 3;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    background-color: #d6ecff;
+
+    &:hover,
+    &.highlighted {
+      background-color: #f0f8ff;
+
+    }
+  }
+}
