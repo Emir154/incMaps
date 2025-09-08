@@ -9,7 +9,7 @@
     background-color: #006C35;
     border: none;
     cursor: pointer;
-    padding: 15px 22px;
+    padding: 15px 15px;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -18,12 +18,12 @@
     transition: background-color var(--transition-time);
 
     &:hover {
-      transition: background-color var(--transition-time) ;
-      background-color:#00592b;
+      transition: background-color var(--transition-time);
+      background-color: #00592b;
     }
   }
 
-  &--size-sm{
+  &--size-sm {
     border-radius: 8px;
     background-color: #006C35;
     border: none;
@@ -38,9 +38,11 @@
 
     &:hover {
       transition: background-color var(--transition-time);
-      background-color:#00592b;
-  }}
-  &--size-sm-bluesecondheader{
+      background-color: #00592b;
+    }
+  }
+
+  &--size-sm-bluesecondheader {
     border-radius: 8px;
     background-color: var(--colorbuttonsecondheader);
     border: none;
@@ -58,6 +60,7 @@
     &:hover {
       transition: background-color var(--transition-time);
       background-color: #243a87;
-    }}
+    }
+  }
 
 }

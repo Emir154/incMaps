@@ -2,7 +2,7 @@ $macbookAir: 1440px;
 $tablet: 1200px;
 $tabletSmall: 1024px;
 $mobile: 767px;
-$Phone: 374px;
+$phone: 374px;
 
 @media (max-width: $tabletSmall) {
   .main {
@@ -11,10 +11,12 @@ $Phone: 374px;
       padding: 30px 0 0 0;
       flex-direction: column;
     }
+
     &__container-main--m1 {
       align-items: center;
       flex-direction: column;
     }
+
     &__container--description {
       display: flex;
       flex-direction: column;
@@ -25,7 +27,7 @@ $Phone: 374px;
 }
 
 @media (max-width: $mobile) {
-  
+
   .main {
     min-width: 767px;
 
@@ -161,4 +163,77 @@ $Phone: 374px;
     &__image-illustration--m12 {
       left: 160px;
     }
-  }}
+  }
+}
+
+@media (max-width: $phone) {
+  .main {
+    min-width: 374px;
+
+    &__container--description-global {
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      background-color: var(--colorbgthemewhite);
+    }
+
+    &__container--button-map {
+      top: 40px;
+    }
+
+    &__community {
+      height: 300px;
+      width: 374px;
+      background-size: 500px;
+    }
+
+    &__container-main {
+      display: flex;
+      padding: 0;
+      align-items: center;
+      max-width: 360px;
+      flex-direction: column;
+    }
+
+    &__container--description-global {
+      padding: 0;
+      padding-bottom: 5px;
+      border-radius: 0;
+    }
+
+    &__container--image {
+      position: relative;
+      height: 450px;
+      min-width: 370px;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__community--peoplemakephoto {
+      display: none;
+    }
+
+    &__image-illustration--m1 {
+      display: none;
+    }
+
+    &__image-illustration--m2 {
+      left: 65px;
+    }
+
+    &__image-illustration--m3 {
+      display: none;
+    }
+
+    &__image-illustration--m8 {
+      left: 0px;
+    }
+
+    &__image-illustration--m11 {
+      left: 0px;
+    }
+  }
+}

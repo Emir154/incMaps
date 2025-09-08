@@ -1,18 +1,22 @@
 $macbookAir: 1440px;
 $tablet: 1200px;
 $mobile: 767px;
-$Phone: 374px;
+$phone: 374px;
 
+@media (max-width: $phone) {
+  .drawer {
+    &__main {
+      margin: auto;
+      max-width: 374px;
+      box-shadow: 2px -2px 27px 2px rgba(227, 227, 227, 0.77);
+      -webkit-box-shadow: 2px -2px 27px 2px rgba(227, 227, 227, 0.77);
+      -moz-box-shadow: 2px -2px 27px 2px rgba(227, 227, 227, 0.77);
+    }
 
+    &__ahref-link {
+      max-width: 100px;
+    }
 
-@media (min-width: $mobile) {
-.drawer {
-  display: none;
-
-  &__main {
-    display: none;
   }
-
-}
 
 }

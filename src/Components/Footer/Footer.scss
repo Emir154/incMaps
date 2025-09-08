@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   background-color: var(--colorbackgroundfooterwhitetheme);
-  min-width: 767px;
+  min-width: 374px;
   max-width: 1440px;
   margin: 0 auto 0;
   padding: 50px 100px 50px 100px;
@@ -13,12 +13,14 @@
     align-items: center;
     justify-content: space-between;
   }
+
   &__container-links-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +31,7 @@
     padding: 0 20px 0 20px;
     align-items: center;
   }
+
   &__container-lang--visible {
     display: none;
   }
@@ -49,6 +52,7 @@
     height: 67px;
     cursor: pointer;
   }
+
   &__link {
     color: var(--text-color);
     padding: 0 20px 0 20px;

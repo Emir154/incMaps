@@ -2,7 +2,7 @@ $macbookAir: 1440px;
 $tablet: 1200px;
 $tabletSmall: 1024px;
 $mobile: 767px;
-$Phone: 374px;
+$phone: 374px;
 
 @media (max-width: $macbookAir) {
   .header {
@@ -84,6 +84,75 @@ $Phone: 374px;
 
     &__logoinc {
       width: 133px;
+    }
+
+    &__nav-list {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: $phone) {
+  .header {
+    background-image: url(../../../../public/assets/images/HomeImages/Rectangle185.jpeg);
+    min-width: 374px;
+
+    &__container {
+      background-color: rgba(204, 225, 215, 0.67);
+    }
+
+    &__description--container {
+      position: relative;
+      min-width: 374px;
+      margin-top: 10px;
+      top: 7px;
+    }
+
+    &__main--description {
+      font-size: 26px;
+      line-height: 40px;
+    }
+
+    &__main--description--n2 {
+      font-size: 29px;
+    }
+
+    &__nav-line {
+      height: 2px;
+      width: 22px;
+    }
+
+    &__buttons {
+      width: 250px;
+    }
+
+    &__desc--img {
+      max-width: 0px;
+      margin-top: 30px;
+    }
+
+    &__desc-img1 {
+      position: relative;
+      left: 70px;
+      max-width: 180px;
+      transform: rotateZ(15deg);
+    }
+
+    &__desc-img2 {
+      position: relative;
+      max-width: 160px;
+    }
+
+    &__desc-img3 {
+      position: relative;
+      max-width: 180px;
+      transform: rotateZ(-15deg);
+    }
+
+
+
+    &__logoinc {
+      width: 103px;
     }
 
     &__nav-list {

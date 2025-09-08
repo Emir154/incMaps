@@ -1,9 +1,9 @@
 .header {
-background-color: #CCE1D7;
-background-image: url(../../../../public/assets/images/HomeImages/Rectangle185.jpeg);
-background-position: center center;
-background-repeat: no-repeat;
-background-size: 100%;
+  background-color: #CCE1D7;
+  background-image: url(../../../../public/assets/images/HomeImages/Rectangle185.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 800px;
   min-width: 767px;
   max-width: 1440px;
@@ -34,18 +34,18 @@ background-size: 100%;
   }
 
   &__description--container {
-      position: relative;
+    position: relative;
     display: flex;
-      top: 80px;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      padding: 0 20px;
+    top: 80px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 0 20px;
     margin: auto;
   }
 
-  &__container--head--description{
+  &__container--head--description {
     position: relative;
     align-items: center;
     max-width: 494px;
@@ -86,33 +86,36 @@ background-size: 100%;
     z-index: 0;
     left: 70px;
     max-width: 222px;
-    transition:transform 0.3s ease;
+    transition: transform 0.3s ease;
 
     &:hover {
       transform: rotateZ(15deg);
     }
   }
+
   &__desc-img2 {
     position: relative;
     z-index: 1;
     max-width: 220px;
-    transition:transform 0.7s ease;
+    transition: transform 0.7s ease;
 
     &:hover {
       transform: scale(1.13);
     }
   }
+
   &__desc-img3 {
     position: relative;
     z-index: 0;
     right: 70px;
     max-width: 222px;
-    transition:transform 0.3s ease;
+    transition: transform 0.3s ease;
 
     &:hover {
       transform: rotateZ(-15deg);
     }
   }
+
   &__buttons {
     display: flex;
     align-items: center;

@@ -2,7 +2,7 @@ $macbookAir: 1440px;
 $tablet: 1200px;
 $tabletSmall: 1024px;
 $mobile: 767px;
-$Phone: 374px;
+$phone: 374px;
 
 @media (max-width: $tabletSmall) {
   .footer {
@@ -10,6 +10,7 @@ $Phone: 374px;
       color: var(--text-color);
       padding: 5px 10px 5px 10px;
     }
+
     &__list {
       display: grid;
       text-align: center;
@@ -24,6 +25,7 @@ $Phone: 374px;
   .footer {
     display: flex;
     flex-direction: column-reverse;
+    width: 767px;
 
     &__container-logo {
       display: flex;
@@ -48,6 +50,7 @@ $Phone: 374px;
       display: block;
 
     }
+
     &__container-lang--visible.footer__container-lang--visible {
       display: flex;
     }
@@ -65,6 +68,56 @@ $Phone: 374px;
       display: block;
       padding-bottom: 20px;
       border-top: 1px solid var(--linegrey);
+    }
+
+  }
+
+}
+
+@media (max-width: $phone) {
+  .footer {
+    max-width: 374px;
+    padding: 0;
+
+    &__list {
+      display: grid;
+      text-align: center;
+      margin: auto;
+      grid-template-columns: repeat(2, 2fr);
+    }
+
+
+    &__container-lang {
+      display: none;
+    }
+
+    &__container-lang--visible {
+      display: block;
+
+    }
+
+    &__container-lang--visible.footer__container-lang--visible {
+      display: flex;
+    }
+
+    &__link {
+      color: var(--text-color);
+      padding: 10px 20px 10px 20px;
+    }
+
+    &__line {
+      margin-top: 20px;
+    }
+
+    &__line--mobile-visible {
+      display: block;
+      padding-bottom: 20px;
+      border-top: 1px solid var(--linegrey);
+    }
+
+    select {
+      width: 55px;
+      height: 40px;
     }
 
   }
