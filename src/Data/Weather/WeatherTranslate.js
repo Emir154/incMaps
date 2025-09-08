@@ -10,7 +10,6 @@ const weatherTranslate = {
     "thunderstorm": "Гроза",
     "snow": "Сніг",
     "mist": "Туман"
-    // додавай по потребі
 };
 
 export default weatherTranslate;

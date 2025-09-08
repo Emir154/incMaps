@@ -4,10 +4,7 @@ import {useTranslation} from "react-i18next";
 import './../../styles/main.scss'
 
 export default function Drawer({drawerStyle, isOpen, onClose, drawerLinks=""}) {
-    const {t, i18n} = useTranslation();
-    const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang);
-    }
+    const {t} = useTranslation();
 
     return (
         <>

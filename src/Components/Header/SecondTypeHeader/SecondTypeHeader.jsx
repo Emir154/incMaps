@@ -8,10 +8,7 @@ import BreadCrumbs from "../../BreadCrumbs/BreadCrumbs";
 import {useTranslation} from "react-i18next";
 
 export default function SecondTypeHeader({breadcrumbs, drawerLinks="", title="", description="", links= ""} ) {
-    const {t, i18n} = useTranslation();
-    const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang);
-    }
+    const {t} = useTranslation();
 
     return (
         <header className="secondheader">

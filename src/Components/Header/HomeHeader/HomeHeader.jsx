@@ -1,16 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router'
-import Buttons from '../../../components/Buttons/Buttons';
+import Buttons from '../../../Components/Buttons/Buttons';
 import BurgerMenu from "../../BurgerMenu/HomeHeaderBurgerMenu";
 import ThemeToggle from "../../ThemeToggle/ThemeToggle";
 import {useTranslation} from "react-i18next";
 import '../../../styles/main.scss'
 
 export default function HomeHeader({drawerLinks}) {
-    const {t, i18n} = useTranslation();
-    const changeLanguage = (lang) => {
-        i18n.changeLanguage(lang);
-    }
+    const {t} = useTranslation();
 
     return (
         <header className="header">
